@@ -1,11 +1,10 @@
-/*  your css code here. If applicable */
 /* Container styles */
 #container {
     width: 280px;
     padding: 10px;
     border-radius: 10px;
     background-color: lightgrey;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Ensures padding is included in width */
 }
 
 /* Heading styles */
@@ -22,17 +21,20 @@
     padding: 10px;
     border-radius: 10px;
     background-color: white;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Ensures padding is included in dimensions */
 }
 
+/* Image styles */
 .notification img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     border: 1px solid black;
     margin-right: 10px;
+    box-sizing: border-box; /* Ensures border is included in dimensions */
 }
 
+/* Paragraph styles */
 .notification p {
     margin: 0;
     display: flex;
@@ -40,10 +42,12 @@
     justify-content: space-between;
 }
 
+/* User span styles */
 .notification .user {
     font-weight: bold;
 }
 
+/* Time span styles */
 .notification .time {
     font-size: 12px;
     font-style: italic;
@@ -54,7 +58,7 @@
 /* Button styles */
 #container button {
     display: block;
-    width: calc(100% - 20px); /* Adjust width to fit padding */
+    width: calc(100% - 20px); /* Adjust for padding */
     margin-top: 10px;
     padding: 10px;
     border-radius: 10px;
